@@ -20,7 +20,6 @@
 }
 
 body {
-    max-width: 1200px;
     margin: 0 auto;
     min-height: 100vh;
     
@@ -38,7 +37,8 @@ header {
 header .header-content {
     display: flex;
     justify-content: space-between;
-    width: 88%;
+    width: calc(100% - 24px);
+    max-width: 1200px;
     margin: 10px auto;
     align-items: center;
     
@@ -221,8 +221,7 @@ header nav a {
     font-style: normal;
     display: block;
     font-family: Roboto-Bold;
-    text-align: right;
-    margin-left: 0;
+    margin-left: 800px;
 }   
 
 #call-to-action {
@@ -296,7 +295,7 @@ header nav a {
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
     padding: 20px;
-    width: calc(33.333% - 16px);
+    width: calc(25% - 18px);
     box-sizing: border-box;
     text-align: left;
     transition: transform 180ms ease, box-shadow 180ms ease;
@@ -382,16 +381,25 @@ header nav a {
 
 .about-story-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 40px;
-    max-width: 1100px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 .about-text {
     flex: 1;
 }
+
+.about-text p {
+    color: #374151;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
 
 .about-text h2,
 #about-values h2 {
@@ -403,11 +411,13 @@ header nav a {
     text-align: center;
 }
 
-.about-text p {
-    color: #374151;
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 16px;
+.about-story-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .about-image {
