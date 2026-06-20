@@ -10,11 +10,21 @@
   <body>
     <header>
       <div class="header-content">
-        <div class="logo">
+        <a href="index.html" class="logo">
           <img src="logo/logo.png" alt="Crew of Code Logo" />
           <span>Crew of Code</span>
-        </div>
-        <nav>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label
+          for="nav-toggle"
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav aria-label="Main Navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="./pages/course.html">Courses</a></li>
@@ -23,7 +33,9 @@
           </ul>
         </nav>
       </div>
-      <div class="hero">
+    </header>
+    <main>
+      <section id="hero" class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
           <h1>Welcome to Crew of Code!!!</h1>
           <p>
@@ -31,14 +43,14 @@
             beginner or an experienced developer, we have something for
             everyone.
           </p>
-          <button>Sign up</button>
+          <a href="./pages/course.html">
+            <button class="hero-button">Sign up</button>
+          </a>
         </div>
-        <div class="hero-image">
-          <img src="images/coding.png" alt="Coding Image" />
-        </div>
-      </div>
-    </header>
-    <main>
+        <figure class="hero-image">
+          <img src="images/coding.png" alt="Person coding on a computer" />
+        </figure>
+      </section>
       <section id="courses">
         <h2>Our Available Courses</h2>
         <div class="course-list">
@@ -83,7 +95,7 @@
             "Everybody should learn to program a computer because it teaches you
             how to think."
           </p>
-          <cite>— Steve Jobs</cite>
+          <cite>- Steve Jobs</cite>
         </blockquote>
       </section>
       <section id="call-to-action">

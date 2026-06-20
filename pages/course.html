@@ -11,9 +11,21 @@
     <header>
       <div class="header-content">
         <div class="logo">
-          <img src="../logo/logo.png" alt="Crew of Code Logo" />
-          <span>Crew of Code</span>
+          <a href="../index.html" class="logo">
+            <img src="../logo/logo.png" alt="Crew of Code Logo" />
+            <span>Crew of Code</span>
+          </a>
         </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label
+          for="nav-toggle"
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <nav>
           <ul>
             <li><a href="../index.html">Home</a></li>
@@ -28,6 +40,9 @@
       <section class="hero course-hero">
         <div class="hero-content-others">
           <h1>Course Catalog</h1>
+          <a href="../index.html">
+            <button id="back-home">← Back to Home</button>
+          </a>
           <p>
             Welcome to our Course Catalog, where learning meets opportunity.
             Whether you're taking your first steps into the world of technology
