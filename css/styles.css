@@ -20,31 +20,10 @@
 }
 
 body {
-    max-width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
-    min-height: 120vh;
+    min-height: 100vh;
     
-}
-
-@media screen and (max-width: 768px) {
-    header .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .hero {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .hero-content {
-        text-align: center;
-    }
-
-    #call-to-action {
-        flex-direction: column;
-        width: 100%;
-    }
 }
 
 header { 
@@ -228,8 +207,8 @@ header nav a {
     font-style: normal;
     display: block;
     font-family: Roboto-Bold;
-    text-align: center;
-    margin-left: 600px;
+    text-align: right;
+    margin-left: 0;
 }   
 
 #call-to-action {
@@ -580,5 +559,52 @@ header nav a {
 @media (max-width: 900px) {
     .contact-content {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    header .header-content,
+    header .hero,
+    #call-to-action,
+    .about-story-content,
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .hero-content,
+    .cta-content {
+        text-align: center;
+    }
+
+    #call-to-action {
+        width: 100%;
+    }
+
+    #quotes cite {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1,
+    .hero-content-others h1 {
+        font-size: 32px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #quotes p {
+        font-size: 24px;
+        max-width: 100%;
     }
 }
